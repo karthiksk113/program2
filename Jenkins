@@ -9,17 +9,6 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'pipeline {
-    agent any
-
-    environment {
-        DOCKER_IMAGE = "karthiksk113/karthii"
-    }
-
-    stages {
-
-        stage('Clone Repository') {
-            steps {
                 git 'https://github.com/karthiksk113/program2.git'
             }
         }
